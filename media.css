@@ -1,9 +1,61 @@
-body {
+
+.body-nav {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #0a192f; /* Dark blue background */
     color: #ccd6f6; /* Light text color */
 }
+
+a {
+    text-decoration: none;
+    color: #ccd6f6;
+}
+/* Add these styles to your existing CSS */
+.typing-controls span {
+    margin-left: 7px;
+    font-size: 1.4rem;
+    outline: 1px solid var(--incoming-chat-border);
+    transition: background 0.3s ease;
+  }
+  
+  .typing-controls span:hover {
+    background: var(--icon-hover-bg);
+  }
+  
+  /* Ensure the new chat button is properly spaced and styled */
+  #new-chat-btn {
+    cursor: pointer;
+  }
+  
+  /* Update responsive styles */
+  @media screen and (max-width: 600px) {
+    .typing-controls {
+      display: flex;
+      gap: 5px;
+    }
+    
+    .typing-controls span {
+      height: 45px;
+      width: 45px;
+      margin-left: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  /* Add smooth transition for button interactions */
+  .typing-controls span {
+    transition: transform 0.2s ease;
+  }
+  
+  .typing-controls span:active {
+    transform: scale(0.95);
+  }
+
+.zove {
+    display: none; /* Initially hidden */
+  }
 
 a {
     text-decoration: none;
