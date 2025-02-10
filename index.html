@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,28 @@
      <link rel="stylesheet" href="/style.css">
      <link rel="stylesheet" href="/media.css">
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-      <!-- Google Fonts Link For Icons -->
-  <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <!-- Google Fonts Link For Icons -->
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-</head> 
+</head>
+
 <body>
      <!-- Navbar -->
-  <nav class="navbar">
-     <div class="logo">ZOVE Ai</div>
-     <div class="nav-links">
-       <a href="#FAQ">FAQs</a>
-       <a href="#features">
-         <div class="cta-button">
-           <a href="#get-started" id="getStartedBtn">Get Started</a>
-         </div>
-       </a>
-     </div>
-     <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-   </nav>
- 
+ faq-feature
+     <nav class="navbar">
+          <div class="logo">ZOVE Ai</div>
+          <div class="nav-links">
+               <a href="#faq_section" class="faq_section">FAQs</a>
+               <a href="#features">
+                    <div class="cta-button">
+                         <a href="#get-started" id="getStartedBtn">Get Started</a>
+                    </div>
+               </a>
+          </div>
+          <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+     </nav>
+  
    <!-- Main Section -->
    <section class="main-section">
      <div class="left-side">
@@ -43,7 +46,56 @@
          alt="ZOVE Ai" />
      </div>
    </section>
-     
+  
+     <!-- FAQ -->
+     <div id="faq_section">
+          <div class="faq_header">
+               <h1>Frequently Asked Question</h1>
+          </div>
+
+          <div class="faq_list">
+               <button class="faq-btn">
+                    <span>What is ZOVE AI?</span>
+                    <span class="icon">+</span>
+               </button>
+               <p class="faq_p">ZOVE AI is an advanced AI-powered chatbot designed to assist users with answering questions, generating content, and providing insightful responses across various topics.p>
+          </div>
+          <div class="faq_list">
+               <button class="faq-btn">
+                    <span>How does ZOVE AI work?
+                    </span>
+                    <span class="icon">+</span>
+               </button>
+               <p class="faq_p">ZOVE AI offers both free and premium access. The free version provides basic functionalities, while the premium plan includes enhanced features such as faster responses and additional customization options.</p>
+          </div>
+          <div class="faq_list">
+               <button class="faq-btn">
+                    <span>Can ZOVE AI generate code?</span>
+                    <span class="icon">+</span>
+               </button>
+               <p class="faq_p">Yes! ZOVE AI can generate, debug, and explain code snippets in multiple programming languages, making it a helpful tool for developers and learners.</p>
+          </div>
+
+          <div class="faq_list">
+               <button class="faq-btn">
+                    <span>Does ZOVE AI store my conversations?</span>
+                    <span class="icon">+</span>
+               </button>
+               <p class="faq_p">ZOVE AI prioritizes user privacy. Conversations are processed for improving AI accuracy, but we do not store or share personal data.
+               </p>
+          </div>
+
+          <div class="faq_list">
+               <button class="faq-btn">
+                    <span>How is ZOVE AI different from ChatGPT?</span>
+                    <span class="icon">+</span>
+               </button>
+               <p class="faq_p">ZOVE AI is designed to provide a more customized experience with features tailored to user needs, including specialized knowledge areas, faster response times, and flexible integration options.
+               </p>
+          </div>
+        
+     </div>
+  
 <!-- Chats container -->
 <div class="zove">
      
@@ -62,10 +114,12 @@
                         <span id="theme-btn" class="material-symbols-rounded">light_mode</span>
                         <span id="delete-btn" class="material-symbols-rounded">delete</span>
                     </div>
+                 
      <script> window.API_KEY = "<?= process.env.API_KEY ?>";</script>
      <script type="module" src="/script.js" defer></script>
 
      <script src="/pop.js" defer></script>
      
 </body>
+
 </html>
