@@ -123,9 +123,15 @@ a {
 /* Main Section Styles */
 .main-section {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 10%;
+    padding: 30px 10%;
+}
+.main-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-section .left-side, .main-section .right-side {
