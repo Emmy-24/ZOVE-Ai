@@ -16,6 +16,7 @@
 
 <body>
      <!-- Navbar -->
+ faq-feature
      <nav class="navbar">
           <div class="logo">ZOVE Ai</div>
           <div class="nav-links">
@@ -28,31 +29,29 @@
           </div>
           <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
      </nav>
-
-     <!-- Main Section -->
-     <section class="main-section">
-          <div class="left-side">
-               <h1>Unlock the Power of AI</h1>
-               <p class="body-animate" id="container-animate"></p>
-               <p>Discover the future of technology with our advanced AI patterns. Enhance your business, automate
-                    processes, and
-                    make smarter decisions.</p>
-               <div class="cta-button">
-                    <a href="#get-started " id="openQuizBtn">Get Started</a>
-               </div>
-          </div>
-          <div class="right-side">
-               <img src="https://res.cloudinary.com/de5sm2jjl/image/upload/v1739050708/ea836578434157.5ca4c05e47945_kv4urg.gif"
-                    alt="ZOVE Ai" />
-          </div>
-     </section>
-
+  
+   <!-- Main Section -->
+   <section class="main-section">
+     <div class="left-side">
+       <h1>Unlock the Power of AI</h1>
+       <p class="body-animate" id="container-animate"></p>
+       <p>Discover the future of technology with our advanced AI patterns. Enhance your business, automate processes, and
+         make smarter decisions.</p>
+       <div class="cta-button">
+         <a href="#get-started " id="openQuizBtn">Get Started</a>
+       </div>
+     </div>
+     <div class="right-side">
+       <img src="https://res.cloudinary.com/de5sm2jjl/image/upload/v1739050708/ea836578434157.5ca4c05e47945_kv4urg.gif"
+         alt="ZOVE Ai" />
+     </div>
+   </section>
+  
      <!-- FAQ -->
      <div id="faq_section">
           <div class="faq_header">
                <h1>Frequently Asked Question</h1>
           </div>
-
 
           <div class="faq_list">
                <button class="faq-btn">
@@ -94,15 +93,33 @@
                <p class="faq_p">ZOVE AI is designed to provide a more customized experience with features tailored to user needs, including specialized knowledge areas, faster response times, and flexible integration options.
                </p>
           </div>
+        
      </div>
+  
+<!-- Chats container -->
+<div class="zove">
+     
+     <div class="right-div">
+          <div class="chat-container"></div>
 
-     </div>
-
-
-     </div>
+          <!-- Typing container -->
+          <div class="typing-container">
+               <div class="typing-content">
+                    <div class="typing-textarea">
+                         <textarea id="chat-input" spellcheck="false" placeholder="Enter a prompt here" required></textarea>
+                        <span id="send-btn" class="material-symbols-rounded">send</span>
+                    </div>
+                    <div class="typing-controls">
+                        <span id="new-chat-btn" class="material-symbols-rounded">add</span>
+                        <span id="theme-btn" class="material-symbols-rounded">light_mode</span>
+                        <span id="delete-btn" class="material-symbols-rounded">delete</span>
+                    </div>
+                 
+     <script> window.API_KEY = "<?= process.env.API_KEY ?>";</script>
+     <script type="module" src="/script.js" defer></script>
 
      <script src="/pop.js" defer></script>
-     <script src="script.js"></script>
+     
 </body>
 
 </html>
