@@ -1,3 +1,30 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const getStartedBtn = document.getElementById("getStartedBtn");
+    const openQuizBtn = document.getElementById("openQuizBtn");
+    const zoveSection = document.querySelector(".zove");
+    const navbar = document.querySelector(".navbar");
+    const mainSection = document.querySelector(".main-section");
+  
+    function showZoveSection() {
+      zoveSection.style.display = "block";
+      navbar.style.display = "none";
+      mainSection.style.display = "none";
+    }
+  
+    if (getStartedBtn) {
+      getStartedBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        showZoveSection();
+      });
+    }
+  
+    if (openQuizBtn) {
+      openQuizBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        showZoveSection();
+      });
+    }
+  });
 const text = "Hello, World!";
   let index = 0;
   const container = document.getElementById("container-animate");
