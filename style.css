@@ -41,6 +41,7 @@ body {
   overflow-y: auto;
   max-height: 100vh;
   padding-bottom: 20px;
+  margin-bottom: 160px;
   /* take note */
   /* display: none;  */
 }
