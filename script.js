@@ -135,7 +135,6 @@ const createNewChat = () => {
 
   // Clear current chat and show default message
   localStorage.removeItem("all-chats");
-  console.log(localStorage.getItem("all-chats"));
   chatContainer.innerHTML = defaultText;
   chatContainer.scrollTo(0, chatContainer.scrollHeight);
 };
