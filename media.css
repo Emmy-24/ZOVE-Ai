@@ -1,318 +1,325 @@
-
 .body-nav {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0a192f; /* Dark blue background */
-    color: #ccd6f6; /* Light text color */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0a192f; /* Dark blue background */
+  color: #ccd6f6; /* Light text color */
 }
 
 a {
-    text-decoration: none;
-    color: #ccd6f6;
+  text-decoration: none;
+  color: #ccd6f6;
 }
 /* Add these styles to your existing CSS */
 .typing-controls span {
-    margin-left: 7px;
-    font-size: 1.4rem;
-    outline: 1px solid var(--incoming-chat-border);
-    transition: background 0.3s ease;
+  margin-left: 7px;
+  font-size: 1.4rem;
+  outline: 1px solid var(--incoming-chat-border);
+  transition: background 0.3s ease;
+}
+
+.typing-controls span:hover {
+  background: var(--icon-hover-bg);
+}
+
+/* Ensure the new chat button is properly spaced and styled */
+#new-chat-btn {
+  cursor: pointer;
+}
+
+/* Update responsive styles */
+@media screen and (max-width: 600px) {
+  .typing-controls {
+    display: flex;
+    gap: 5px;
   }
-  
-  .typing-controls span:hover {
-    background: var(--icon-hover-bg);
-  }
-  
-  /* Ensure the new chat button is properly spaced and styled */
-  #new-chat-btn {
-    cursor: pointer;
-  }
-  
-  /* Update responsive styles */
-  @media screen and (max-width: 600px) {
-    .typing-controls {
-      display: flex;
-      gap: 5px;
-    }
-    
-    .typing-controls span {
-      height: 45px;
-      width: 45px;
-      margin-left: 5px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-  
-  /* Add smooth transition for button interactions */
+
   .typing-controls span {
-    transition: transform 0.2s ease;
+    height: 45px;
+    width: 45px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
-  .typing-controls span:active {
-    transform: scale(0.95);
-  }
+}
+
+/* Add smooth transition for button interactions */
+.typing-controls span {
+  transition: transform 0.2s ease;
+}
+
+.typing-controls span:active {
+  transform: scale(0.95);
+}
 
 .zove {
-    display: none; /* Initially hidden */
-  }
+  display: none; /* Initially hidden */
+}
 
 a {
-    text-decoration: none;
-    color: #ccd6f6;
+  text-decoration: none;
+  color: #ccd6f6;
 }
 .text {
-    font-size: 2.5rem;
-    font-weight: bold;
-    background: linear-gradient(45deg, #ff0000, #ff7300, #ffeb00, #00ff00, #0000ff, #4b0082, #8a2be2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-    white-space:nowrap;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #ffeb00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #8a2be2
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
 }
 .body-animate {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: 10vh;
+  /* background: #000; */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+@media (max-width: 768px) {
+  .body-animate {
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     height: 10vh;
     /* background: #000; */
     color: white;
     font-family: Arial, sans-serif;
-}
-@media (max-width: 768px) {
-    .body-animate {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 10vh;
-        /* background: #000; */
-        color: white;
-        font-family: Arial, sans-serif;
-    }
+  }
 }
 /* Navbar Styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    background-color: #112240; /* Slightly lighter dark blue */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #112240; /* Slightly lighter dark blue */
 }
 
 .navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .navbar .nav-links {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .navbar .nav-links a:hover {
-    color: #64ffda; /* Teal color for hover effect */
+  color: #64ffda; /* Teal color for hover effect */
 }
 
 /* Hamburger Menu for Mobile */
 .navbar .menu-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* Main Section Styles */
 .main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+.main-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-section .left-side,
+.main-section .right-side {
+  flex: 1;
+}
+
+.main-section .left-side {
+  padding-right: 40px;
+}
+
+.main-section .left-side h1 {
+  font-size: 40px;
+  margin-bottom: 5px;
+  color: #64ffda; /* Teal color for heading */
+}
+
+.main-section .left-side p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.main-section .left-side .cta-button {
+  margin-top: 30px;
+}
+
+.main-section .left-side .cta-button a {
+  background-color: #64ffda;
+  color: #0a192f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.main-section .right-side img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .main-left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+  }
 }
-.main-left{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main-section .left-side, .main-section .right-side {
-    flex: 1;
-}
-
-.main-section .left-side {
-    padding-right: 40px;
-}
-
-.main-section .left-side h1 {
-    font-size: 40px;
-    margin-bottom: 5px;
-    color: #64ffda; /* Teal color for heading */
-}
-
-.main-section .left-side p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.main-section .left-side .cta-button {
-    margin-top: 30px;
-}
-
-.main-section .left-side .cta-button a {
-    background-color: #64ffda;
-    color: #0a192f;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.main-section .right-side img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-@media (max-width: 768px) {
-    .main-left{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
 
 /* FAQ */
 
 #faq_section {
-    width: 80%;
-    max-width: 600px;
-    padding: 80px 80px;
+  width: 80%;
+  max-width: 600px;
+  padding: 80px 80px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  #faq_section {
+    width: 100%;
+    font-size: 0.7rem;
+    /* max-width: 600px; */
+    padding: 0px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-}
-@media (max-width: 768px) {
-    #faq_section {
-        width: 100%;
-        font-size: 0.7rem;
-        /* max-width: 600px; */
-        padding: 0px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-    .faq_list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        width: 100%;
-        gap: 8px;
-        border-bottom: 1px solid #64ffda;
-        padding: 12px 0;
-    }
-}
-
-.faq_header h1 {
-    text-align: center;
-}
-
-.faq_list {
+  }
+  .faq_list {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     gap: 8px;
     border-bottom: 1px solid #64ffda;
     padding: 12px 0;
+  }
+}
+
+.faq_header h1 {
+  text-align: center;
+}
+
+.faq_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  gap: 8px;
+  border-bottom: 1px solid #64ffda;
+  padding: 12px 0;
 }
 
 .faq-btn {
-    width: 100%;
-    background: none;
-    border: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: inherit;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 0;
-    gap: 32px;
+  width: 100%;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: inherit;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  gap: 32px;
 }
 
 .icon {
-    font-size: 24px;
-    color: #00ff00;
+  font-size: 24px;
+  color: #00ff00;
 }
 
 .faq_p {
-    display: none;
-
+  display: none;
 }
 
 .open {
-    display: block;
+  display: block;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .navbar .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #112240;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 20px 0;
-    }
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #112240;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 20px 0;
+  }
 
-    .navbar .nav-links.active {
-        display: flex;
-    }
+  .navbar .nav-links.active {
+    display: flex;
+  }
 
-    .navbar .menu-icon {
-        display: block;
-    }
+  .navbar .menu-icon {
+    display: block;
+  }
 
-    .main-section {
-        flex-direction: column;
-        text-align: center;
-    }
+  .main-section {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .main-section .left-side {
-        padding-right: 0;
-        margin-bottom: 30px;
-    }
+  .main-section .left-side {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
 
-    .main-section .right-side img {
-        width: 80%;
-    }
+  .main-section .right-side img {
+    width: 80%;
+  }
 }
 
 @media (max-width: 480px) {
-    .navbar {
-        padding: 20px 5%;
-    }
+  .navbar {
+    padding: 20px 5%;
+  }
 
-    .main-section {
-        padding: 50px 5%;
-    }
+  .main-section {
+    padding: 50px 5%;
+  }
 
-    .main-section .left-side h1 {
-        font-size: 36px;
-    }
+  .main-section .left-side h1 {
+    font-size: 36px;
+  }
 
-    .main-section .left-side p {
-        font-size: 16px;
-    }
+  .main-section .left-side p {
+    font-size: 16px;
+  }
 }
