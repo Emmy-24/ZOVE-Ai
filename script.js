@@ -74,13 +74,13 @@ const getChatResponse = async (incomingChatDiv) => {
   localStorage.setItem("all-chats", chatContainer.innerHTML);
   chatContainer.scrollTo(0, chatContainer.scrollHeight);
 };
-const copyResponse = (copyBtn) => {
-  // Copy the text content of the response to the clipboard
-  const reponseTextElement = copyBtn.parentElement.querySelector("p");
-  navigator.clipboard.writeText(reponseTextElement.textContent);
-  copyBtn.textContent = "done";
-  setTimeout(() => (copyBtn.textContent = "content_copy"), 1000);
-};
+//  const copyResponse = (copyBtn) => {
+//     Copy the text content of the response to the clipboard
+//   const reponseTextElement = copyBtn.parentElement.querySelector("p");
+//   navigator.clipboard.writeText(reponseTextElement.textContent);
+//   copyBtn.textContent = "done";
+//   setTimeout(() => (copyBtn.textContent = "content_copy"), 1000);
+// };
 const showTypingAnimation = () => {
   // Display the typing animation and call the getChatResponse function
   const html = `<div class="chat-content">
