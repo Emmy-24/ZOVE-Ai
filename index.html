@@ -19,42 +19,7 @@
   </head>
 
   <body>
-    <div class="hamburger__container">
-      <div class="hamburger"></div>
-    </div>
-    <div class="side__panel">
-      <div class="side__panel__content">
-        <div class="side__panel__header">
-          <div class="searchContainer">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" id="searchBar" placeholder="Search..." />
-          </div>
-          <div class="side__panel__logo">
-            <img src="https://res.cloudinary.com/de5sm2jjl/image/upload/v1739265730/user_kjpbvs.jpg" alt="chat_jpg" />
-            <h3 class="side__panel__heading">ZOVE-Ai</h3>
-          </div>
-        </div>
-
-        <div class="side__panel__history">
-          <h4 class="top-text">History tab</h4>
-          <!-- <p class="active">Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p> -->
-          <div class="bottom-text">
-            <span id="new-chat-btn" class="material-symbols-rounded">add</span>
-            <h4>New Chat</h4>
-          </div>
-        </div>
-        <div class="side__panel__footer">
-          <div class="footer__content">
-            <i class="fa-regular fa-compass"></i>
-            <p class="footer__content-text">Explore ZOVE</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <!-- Navbar -->
     <div class="body-nav">
@@ -165,6 +130,42 @@
     <div class="main">
       <div class="overlay"></div>
       <div class="zove">
+        <div class="hamburger__container">
+          <div class="hamburger"></div>
+        </div>
+        <div class="side__panel">
+          <div class="side__panel__content">
+            <div class="side__panel__header">
+              <div class="searchContainer">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchBar" placeholder="Search..." />
+              </div>
+              <div class="side__panel__logo">
+                <img src="https://res.cloudinary.com/de5sm2jjl/image/upload/v1739265730/user_kjpbvs.jpg" alt="chat_jpg" />
+                <h3 class="side__panel__heading">ZOVE-Ai</h3>
+              </div>
+            </div>
+    
+            <div class="side__panel__history">
+              <h4 class="top-text">History tab</h4>
+              <!-- <p class="active">Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor sit amet.</p> -->
+              <div class="bottom-text">
+                <span id="new-chat-btn" class="material-symbols-rounded">add</span>
+                <h4>New Chat</h4>
+              </div>
+            </div>
+            <div class="side__panel__footer">
+              <div class="footer__content">
+                <i class="fa-regular fa-compass"></i>
+                <p class="footer__content-text">Explore ZOVE</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="right-div">
           <div class="chat-container"></div>
 
@@ -199,6 +200,7 @@
           window.API_KEY = "<?= process.env.API_KEY ?>";
         </script>
         <script type="module" src="/script.js" defer></script>
+
 
         <script src="/pop.js" defer></script>
       </div>
