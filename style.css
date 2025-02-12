@@ -9,6 +9,16 @@
 }
 
 :root {
+  --text-color: hsla(0, 0%, 100%, 0.8); /* White with 80% opacity */
+  --icon-color: hsla(240, 10%, 71%, 0.6);  /* Light gray, semi-transparent */
+  --icon-hover-bg: hsla(240, 9%, 40%, 0.9); /* Darker gray with some transparency */
+  --placeholder-color: hsla(0, 0%, 86%, 0.5); /* Very light gray, semi-transparent */
+  --outgoing-chat-bg: hsla(240, 53%, 9%, 0.9); /* Dark background, almost opaque */
+  --incoming-chat-bg: hsla(240, 31%, 18%, 0.9); /* Similar dark background, almost opaque */
+  --outgoing-chat-border: hsla(240, 53%, 9%, 0.9);
+  --incoming-chat-border: hsla(240, 31%, 18%, 0.9);
+}
+/* :root {
   --text-color: #ffffff;
   --icon-color: #acacbe;
   --icon-hover-bg: #5b5e71;
@@ -17,7 +27,7 @@
   --incoming-chat-bg: #444654;
   --outgoing-chat-border: #343541;
   --incoming-chat-border: #444654;
-}
+} */
 
 .light-mode {
   --text-color: #343541;
@@ -216,6 +226,9 @@ span.material-symbols-rounded {
   .typing-textarea {
     width: 100%;
   }
+  /* .typing-content span {
+    width: 50px;
+    height: 0%; */
 }
 
 .typing-container .typing-textarea {
@@ -321,7 +334,6 @@ span.material-symbols-rounded {
   }
 
   .typing-content span {
-    height: 45px;
     width: 45px;
     margin-left: 5px;
   }
