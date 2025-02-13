@@ -214,6 +214,10 @@ span.material-symbols-rounded {
   width: 100%;
   align-items: center;
 }
+.bottom-text{
+  cursor: pointer !important;
+  padding: 2px !important;
+}
 
 @media screen and (max-width: 768px) {
   .typing-container .typing-content {
@@ -253,6 +257,7 @@ span.material-symbols-rounded {
   background: #0a192f;
   /* background: var(--incoming-chat-bg); */
   outline: 3px solid var(--incoming-chat-border);
+  /* outline: 3px solid rgb(138, 127, 127); */
 }
 
 .typing-textarea textarea::placeholder {
