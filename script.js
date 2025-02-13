@@ -126,7 +126,7 @@ const handleOutgoingChat = () => {
   chatInput.style.height = `${initialInputHeight}px`;
   const html = `<div class="chat-content">
                     <div class="chat-details">
-                        <img src="https://res.cloudinary.com/de5sm2jjl/image/upload/v1739265730/user_kjpbvs.jpg" alt="user-img">
+                        <img src="https://res.cloudinary.com/de5sm2jjl/image/upload/v1739411072/avatar-maker-photo-to-cartoon_fjcuca.png" alt="user-img">
                         <p>${userText}</p>
                     </div>
                 </div>`;
