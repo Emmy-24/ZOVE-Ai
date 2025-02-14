@@ -74,7 +74,7 @@ const getChatResponse = async (incomingChatDiv) => {
     console.log(response);
 
     pElement.textContent =
-      response.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g);
+      response.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, '$1');
   } catch (error) {
     // Add error class to the paragraph element and set error text
     pElement.classList.add("error");
